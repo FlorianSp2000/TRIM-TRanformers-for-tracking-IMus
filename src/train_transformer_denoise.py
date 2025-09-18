@@ -1,16 +1,13 @@
+import os
+import math
+import argparse
+import pickle
+import numpy as np
+import pandas as pd
 import torch
-import torch.optim as optim
 from torch import nn, Tensor
 from torch.nn import TransformerEncoder, TransformerEncoderLayer
 from torch.utils.data import TensorDataset, DataLoader
-import numpy as np
-import math
-import os
-import pandas as pd
-import argparse
-import pickle
-import math
-import os
 
 def load_dataset(data_path, window_size=120, stride=10):
     ts_column = ["time(us)"]

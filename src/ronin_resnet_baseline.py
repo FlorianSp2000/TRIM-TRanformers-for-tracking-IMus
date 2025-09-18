@@ -1,17 +1,14 @@
 # This file is built upon the official RoNIN implementation 
 # https://github.com/Sachini/ronin/tree/master
 
-import torch
-from torch import nn
-import torch.optim as optim
-import numpy as np
 import os
-import pandas as pd
-from torch.utils.data import TensorDataset, DataLoader
 import argparse
 import pickle
+import numpy as np
+import pandas as pd
+from torch.utils.data import TensorDataset, DataLoader
 import torch
-import torch.nn as nn
+from torch import nn
 
 
 def conv3(in_planes, out_planes, kernel_size, stride=1, dilation=1):

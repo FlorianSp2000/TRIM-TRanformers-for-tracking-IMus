@@ -17,7 +17,9 @@ method is evaluated on the TUM-VIE dataset and demonstrates superior
 performance compared to previous models.
 
 ### Requirements
-python3, numpy, scipy, pandas, matplotlib, torch, torchvision, tqdm
+```bash
+pip install -r requirements.txt
+```
 
 ### Data 
 The dataset used by this project is the Visual-Inertial Event Dataset (TUM-VIE), which is publicly accesible from https://cvg.cit.tum.de/data/datasets/visual-inertial-event-dataset
@@ -33,5 +35,7 @@ The dataset used by this project is the Visual-Inertial Event Dataset (TUM-VIE),
     * run ```src/train_transformer_quaternions.py``` 
 
 ### Acknowledgements
+This project was developed by [Daniel Eskandar](https://github.com/danieleskandar), [Florian Sprick](https://github.com/FlorianSp2000) and [Philipp Davydov](https://github.com/drodel01).
+
 Our work builds upon the following paper:
 [Herath, S., Yan, H. and Furukawa, Y., 2020, May. RoNIN: Robust Neural Inertial Navigation in the Wild: Benchmark, Evaluations, & New Methods. In 2020 IEEE International Conference on Robotics and Automation (ICRA) (pp. 3146-3152). IEEE.](https://ieeexplore.ieee.org/abstract/document/9196860)
